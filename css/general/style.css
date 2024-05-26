@@ -40,7 +40,6 @@ header{
     right: 0;
     background: var(--darkBackground);
     color: var(--whiteText);
-    box-shadow: 0 0 10px #aaa;
     z-index: 1000;
 } 
 header .logo i{
