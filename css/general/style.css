@@ -24,7 +24,7 @@ body{
     background: var(--backgroundColor);
     color: var(--text);
     font-size: 17px;
-
+    user-select: none;
     font-family:'Poppins', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
