@@ -35,6 +35,7 @@
     text-decoration: none;
     color: var(--darkBackground);
     margin-bottom: 4em;
+    font-weight: 600;
 }
 .hero-section .right img{
     width: 90%;
