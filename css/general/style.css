@@ -15,7 +15,7 @@
     --cardBackground: #00000011;
     --hoveredCardBackground: #0000002d;
 
-    --dark-background:  #071935;
+    --darkBackground: #071935;
 
     --headingSize: 64px;
     --scHs: 35px;
@@ -38,7 +38,8 @@ header{
     top: 0;
     left: 0;
     right: 0;
-    background: var(--backgroundColor);
+    background: var(--darkBackground);
+    color: var(--whiteText);
     box-shadow: 0 0 10px #aaa;
     z-index: 1000;
 } 

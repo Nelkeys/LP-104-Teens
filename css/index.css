@@ -11,7 +11,7 @@
     margin: 11em 3em 2em 3em;
     border-radius: 30px;
     color: var(--whiteText);
-    background-color: #071935;
+    background: var(--darkBackground);
 }
 
 .hero-section .left{
