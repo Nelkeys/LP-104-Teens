@@ -21,6 +21,7 @@
     --scHs: 35px;
 }
 body{
+    -webkit-tap-highlight-color: transparent;
     background: var(--backgroundColor);
     color: var(--text);
     font-size: 17px;
