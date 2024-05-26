@@ -94,7 +94,7 @@
     display: flex;
     align-items: center;
     height: 100%;
-    margin: 0 0 0 3em   ;
+    margin: 0 0 0 3em;
 }
 .events .top .heading{
     display: flex;
@@ -268,4 +268,4 @@
 }
 .countdown-holder h1{
     font-size: var(--headingSize);
-}
+} 

@@ -18,6 +18,7 @@
     --dark-background:  #071935;
 
     --headingSize: 64px;
+    --scHs: 35px;
 }
 body{
     background: var(--backgroundColor);
@@ -76,3 +77,204 @@ nav ul li a:hover{
 
 
 
+
+
+
+
+
+/* Adjustments for Tablets and Small Desktops */
+@media (max-width: 1024px) {
+    header {
+        padding: 1.5em 3em;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        padding: 2em;
+        margin: 5em 0 0 0 !important;
+        border-radius: 0 !important;
+    }
+
+    .hero-section .left p,
+    .hero-section .right img {
+        width: 100%;
+    }
+
+    .hero-section .left a {
+        width: 50%;
+    }
+
+    .about {
+        margin: 0 !important;
+    }
+
+    .cards {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .card {
+        width: 80% !important;
+        height: auto;
+    }
+
+    .events .top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .events .top .heading {
+        width: 100%;
+        text-align: center;
+    }
+
+    .events .top .past-events {
+        flex-direction: column;
+        width: 100% !important;
+    }
+
+    .events .top .event1,
+    .events .top .event2 {
+        width: 70% !important;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .events .buttom .heading h1 {
+        border-bottom: none;
+    }
+
+    .upcoming-event .event-info {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .upcoming-event .event-info div {
+        width: 100%;
+    }
+
+    .countdown-holder h1 {
+        font-size: 40px;
+    }
+}
+
+/* Adjustments for Mobile Devices */
+@media (max-width: 768px) {
+    header {
+        padding: 1em 2em !important;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .hero-section {
+        margin: 6em 1em 1em 1em;
+        padding: 1em;
+    }
+
+    .hero-section .left a {
+        width: 80%;
+        padding: 1em;
+    }
+
+    .about {
+        margin: 6em 1em 1em 1em !important;
+    }
+
+    .cards {
+        margin-top: 1.5em !important;
+        gap: 1em;
+    }
+
+    .events {
+        margin: 4em 1em 1em 1em !important;
+        padding: 0 1em 1em 1em !important;
+    }
+
+    .events .top .event1,
+    .events .top .event2 {
+        width: 100% !important;
+        height: 25em !important;
+        border-radius: 10px;
+    }
+    .events .top .heading{
+        align-items: center !important;
+        width: 100% !important;
+    }
+
+    .upcoming-event .event-name {
+        font-size: 32px;
+    }
+    .events .top .past-events{
+        width: 100% !important;
+    }
+    .upcoming-event .event-info {
+        width: 100%;
+    }
+
+    .upcoming-event .event-info div {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .countdown-holder h1 {
+        font-size: var(--scHs) !important;
+    }
+}
+
+/* Adjustments for Very Small Mobile Devices */
+@media (max-width: 480px) {
+    .hero-section{
+        padding: 2em !important;
+    }
+    .hero-section .left a {
+        width: 90%;
+    }
+
+    .hero-section .left p{
+        width: 100% !important;
+    }
+    .about {
+        margin: 2em 0.5em 1em 0.5em;
+    }
+
+    .cards {
+        gap: 0.5em;
+    }
+
+    .events {
+        margin: 2em 0.5em 1em 0.5em;
+        padding: 0 0.5em 1em 0.5em;
+    }
+    .events .top{
+        margin: 0 !important;
+    }
+    
+    .events .top .event1,
+    .events .top .event2 {
+        height: 20em !important;
+    }
+    .hero-section .left .left-top h1,
+    .events .top .heading h1,
+    .about h1{
+        font-size: var(--scHs) !important;
+        text-align: center !important;
+    }
+    .events .top .heading p{
+        width: 100% !important;
+    }
+    .upcoming-event .event-name {
+        font-size: 28px;
+    }
+
+    .upcoming-event .event-info {
+        width: 100%;
+    }
+
+    .upcoming-event .event-info div {
+        width: 100%;
+        margin-bottom: 0.5em;
+    }
+}
