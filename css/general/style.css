@@ -5,17 +5,17 @@
     box-sizing: border-box;
 }
 :root{
-    --gradient-color: linear-gradient(TO RIGHT,#7f11aa, rgb(11, 84, 102), #18dcff);
-    --primaryColor: #b151e9;
+    --gradient-color: linear-gradient(TO RIGHT,#003366, rgb(11, 84, 102), #18dcff);
+    --primaryColor: #ffd700;
 
-    --backgroundColor:#e7f9fa;
+    --backgroundColor:#f5f5f5;
     --text: #1f1f1f;
     --whiteText: #fff;
 
     --cardBackground: #00000011;
     --hoveredCardBackground: #0000002d;
 
-    --darkBackground: #071935;
+    --darkBackground: #003366;
 
     --headingSize: 64px;
     --scHs: 35px;
