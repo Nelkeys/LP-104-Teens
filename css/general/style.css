@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap') all;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --gradient-color: linear-gradient(TO RIGHT,#7f11aa, rgb(11, 84, 102), #18dcff);
+    --primaryColor: #b151e9;
+
+    --backgroundColor:#e7f9fa;
+    --text: #1f1f1f;
+    --whiteText: #fff;
+
+    --cardBackground: #00000011;
+    --hoveredCardBackground: #0000002d;
+
+    --dark-background:  #071935;
+
+    --headingSize: 64px;
+}
+body{
+    background: var(--backgroundColor);
+    color: var(--text);
+    font-size: 17px;
+
+    font-family:'Poppins', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5em 12em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--backgroundColor);
+    box-shadow: 0 0 10px #aaa;
+    z-index: 1000;
+} 
+header .logo i{
+    font-size: 200%;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 700;
+    transition: .5s ease;
+}
+nav ul li a:hover{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,271 @@
+@import url(/css/general/style.css) all;
+
+
+
+.hero-section{
+    display: flex;
+    align-items: end;
+    justify-content:flex-start;
+    gap: 2em;
+    padding: 5em 5em 0 5em;
+    margin: 11em 3em 2em 3em;
+    border-radius: 30px;
+    color: var(--whiteText);
+    background-color: #071935;
+}
+
+.hero-section .left{
+    display: flex;
+    gap: 2.5em;
+    flex-direction: column;
+}
+.hero-section .left .left-top h1{
+    font-size: var(--headingSize);
+}
+.hero-section .left p{
+    width: 60%;
+}
+.hero-section .left a{
+    font-size: 90%;
+    width: 25%;
+    padding: 1.2em;
+    text-align: center;
+    background: var(--primaryColor);
+    border-radius: 5em;
+    text-decoration: none;
+    color: var(--whiteText);
+    margin-bottom: 4em;
+}
+.hero-section .right img{
+    width: 90%;
+}
+
+
+
+.about{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 8em 10em 2em 10em;
+}
+.about h1{
+    font-size: var(--headingSize);
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1em;
+    margin-top: 3em;
+   
+}
+.card{
+    background: var(--cardBackground);
+    border-radius: 2em;
+    border-top-right-radius: 5em;
+    width: 25%;
+    height: 20em;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 2.5em;
+    font-size: 80%;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.card h2{
+    color: var(--primaryColor);
+}
+.card:hover{
+    background: var(--hoveredCardBackground);
+    box-shadow: 0 0 15px #bbb;
+}
+
+
+
+
+.events{
+    margin: 7em 0;
+    padding: 0 3em 2em 3em;
+}
+.events .top{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0 0 0 3em   ;
+}
+.events .top .heading{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+}
+.events .top .heading h1{
+    font-size: var(--headingSize);
+}
+.events .top .heading p{
+    width: 80%;
+}
+.events .top .past-events{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 60%;
+    padding: 2em 0;
+    gap: 1em;
+}
+
+/**
+.events .top .event1,
+.events .top .event2{
+    padding: 2em;
+    background: url(/assets/Using-Vanco-for-Church-Events_featured_image.webp) center/cover ;
+    text-align: center;
+    width: 50%;
+    height: 25em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2em;
+    border-radius: 50%;
+    color: var(--primaryColor);
+}
+.event-info-show{
+    color: var(--whiteText);
+    font-weight: 700;
+    display: none;
+}
+*/
+
+.events .top .event1,
+.events .top .event2 {
+    position: relative; /* Ensure the pseudo-element is positioned relative to the parent */
+    padding: 2em;
+    background: url(/assets/Using-Vanco-for-Church-Events_featured_image.webp) center/cover;
+    text-align: center;
+    width: 50%;
+    height: 25em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2em;
+    border-radius: 50%;
+    color: var(--primaryColor);
+    overflow: hidden; /* Hide the pseudo-element overflow */
+    cursor: pointer;
+}
+
+.events .top .event1::before,
+.events .top .event2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0); /* Start with no dimming */
+    transition: background-color 0.5s ease; /* Smooth transition for dimming effect */
+}
+
+.events .top .event1:hover::before,
+.events .top .event2:hover::before {
+    background-color: rgba(0, 0, 0, 0.5); /* Dim the background on hover */
+}
+
+.events .top .event1:hover .event-info-show,
+.events .top .event2:hover .event-info-show {
+    display: block; /* Show the .event-info-show on hover */
+}
+
+.event-info-show {
+    color: var(--whiteText);
+    font-weight: 700;
+    display: none;
+    z-index: 1; /* Ensure it appears above the pseudo-element */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.events .buttom{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5em;
+    width: 100%;
+
+}
+.events .buttom .heading h1{
+    padding: .1px;
+    border-bottom: 5px solid #111;
+}
+
+.upcoming-event{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3em;
+}
+.upcoming-event .event-name{
+    font-size: var(--headingSize);
+    transition: .5s ease;
+    cursor: pointer;
+}
+.upcoming-event .event-name:hover{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.upcoming-event .event-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+    margin-top: 3em;
+    gap: 2em;
+}
+.upcoming-event .event-info div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    font-weight: 700;
+    cursor: pointer;
+}
+.upcoming-event .event-info div p{
+   text-align: center;
+   max-width: 10em;
+}
+.upcoming-event .event-info i{
+    font-size: 180%;
+}
+
+.countdown-holder{
+    margin-top: 1em;
+    text-align: center;
+}
+.countdown-holder h1{
+    font-size: var(--headingSize);
+}
