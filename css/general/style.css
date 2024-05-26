@@ -55,7 +55,7 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
-    color: var(--text);
+    color: var(--whiteText);
     font-weight: 700;
     transition: .5s ease;
 }
@@ -65,7 +65,8 @@ nav ul li a:hover{
     background-clip: text;
     color: transparent;
 }
-.fa-bars-staggered{
+.fa-bars-staggered,
+.fa-xmark{
     display: none;
     font-size: 25px;
     cursor: pointer;
@@ -173,10 +174,8 @@ nav ul li a:hover{
     .fa-bars-staggered{
         display: block;
     }
-    nav{
-        display: '';
-    }
     nav ul {
+        display: none;
         flex-direction: column;
         gap: 1em;
         position: fixed;
@@ -187,14 +186,18 @@ nav ul li a:hover{
         padding: 1em;
         border-radius: 1em;
     }
-
+    nav ul li a{
+        color: #1F1F1F;
+    }
     .hero-section {
+        align-items: center !important;
+        justify-content: center !important;
         margin: 6em 1em 1em 1em;
         padding: 1em;
     }
 
     .hero-section .left a {
-        width: 80%;
+        width: 40% !important;
         padding: 1em;
     }
 
@@ -206,7 +209,6 @@ nav ul li a:hover{
         margin-top: 1.5em !important;
         gap: 1em;
     }
-
     .events {
         margin: 4em 1em 1em 1em !important;
         padding: 0 1em 1em 1em !important;
@@ -224,7 +226,7 @@ nav ul li a:hover{
     }
 
     .upcoming-event .event-name {
-        font-size: 32px;
+        font-size: var(--scHs) !important;
     }
     .events .top .past-events{
         width: 100% !important;
@@ -248,8 +250,11 @@ nav ul li a:hover{
     .hero-section{
         padding: 2em !important;
     }
+    .hero-section .left h1{
+        font-size: var(--scHs) !important;
+    }
     .hero-section .left a {
-        width: 90%;
+        width: 100% !important;
     }
 
     .hero-section .left p{
@@ -275,7 +280,6 @@ nav ul li a:hover{
     .events .top .event2 {
         height: 20em !important;
     }
-    .hero-section .left .left-top h1,
     .events .top .heading h1,
     .about h1{
         font-size: var(--scHs) !important;

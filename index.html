@@ -20,13 +20,14 @@
 
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#events">Events</a></li>
+                <li><a href="#home" onclick="hideNav()">Home</a></li>
+                <li><a href="#about" onclick="hideNav()">About</a></li>
+                <li><a href="#events" onclick="hideNav()">Events</a></li>
             </ul>
         </nav>
 
-        <i class="fa-solid fa-bars-staggered"></i>
+        <i class="fa-solid fa-bars-staggered" onclick="showNav()"></i>
+        <i class="fa-solid fa-xmark" onclick="hideNav()"></i>
     </header>
 
 
@@ -96,14 +97,14 @@
                     <div class="event-info-show">
                         <p>Chritmas Carol</p>
                         <a href="">View Pictures</a>
-                    </div>  
+                    </div>
                 </div>
 
                 <div class="event2">
                     <div class="event-info-show">
                         <p>Chritmas Carol</p>
                         <a href="">View Pictures</a>
-                    </div>  
+                    </div>
                 </div>
             </div>
         </div>
@@ -155,7 +156,7 @@
 
 
     <footer>
-        
+
     </footer>
 
 
@@ -201,6 +202,31 @@
                 });
             });
         });
+
+
+
+        const navList = document.querySelector('nav ul');
+
+        function showNav() {
+            if (window.matchMedia("(max-width: 768px)").matches) {
+                document.querySelector('.fa-xmark').style.display = 'block';
+                document.querySelector('.fa-bars-staggered').style.display = 'none';
+
+                const navList = document.querySelector('nav ul');
+                navList.style.display = 'flex';
+                navList.style.flexDirection = 'column'; // Ensure it displays in column for mobile view
+            }
+        }
+
+        function hideNav() {
+            if (window.matchMedia("(max-width: 768px)").matches) {
+                document.querySelector('.fa-xmark').style.display = 'none';
+                document.querySelector('.fa-bars-staggered').style.display = 'block';
+
+                const navList = document.querySelector('nav ul');
+                navList.style.display = 'none';
+            }
+        }
 
     </script>
 </body>
