@@ -227,15 +227,12 @@
     margin-top: 3em;
 }
 .upcoming-event .event-name{
-    font-size: var(--headingSize);
-    transition: .5s ease;
-    cursor: pointer;
-}
-.upcoming-event .event-name:hover{
     background: var(--gradient-color);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    font-size: var(--headingSize);
+    cursor: pointer;
 }
 .upcoming-event .event-info{
     display: flex;
