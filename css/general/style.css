@@ -248,9 +248,9 @@ nav ul li a:hover{
 /* Adjustments for Very Small Mobile Devices */
 @media (max-width: 480px) {
     .hero-section{
-        align-items: center !important;
-        justify-content: flex-end !important;
-        padding: 2em !important;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 2em 2em 0 2em !important;
     }
     .hero-section .left h1{
         font-size: var(--scHs) !important;
@@ -258,12 +258,8 @@ nav ul li a:hover{
     .hero-section .left a {
         width: 100% !important;
     }
-
     .hero-section .left p{
         width: 100% !important;
-    }
-    .hero-section .right{
-
     }
     .about {
         margin: 2em 0.5em 1em 0.5em;
