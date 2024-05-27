@@ -36,6 +36,12 @@
     color: var(--darkBackground);
     margin-bottom: 4em;
     font-weight: 600;
+    transition: .5s ease;
+}
+.hero-section .left a:hover{
+    background: var(--cardBackground);
+    color: var(--primaryColor);
+    border: .5px solid var(--primaryColor);
 }
 .hero-section .right img{
     width: 90%;
