@@ -275,3 +275,11 @@
 .countdown-holder h1{
     font-size: var(--headingSize);
 } 
+
+
+.event-starts{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    margin-top: 1em;
+}
